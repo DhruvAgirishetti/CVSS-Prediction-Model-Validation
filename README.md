@@ -2,6 +2,8 @@
 
 A prototype machine learning pipeline that parses National Vulnerability Database (NVD) JSON data to train and validate a model for predicting CVSS Base Scores. The model extracts a CVE's vector string, reading them individually, along with vulnerability descriptions, to measure how accurately linear regression models can predict severity ratings.
 
+**Project Status:** Phase 1 (Model Validation) is complete. This prototype serves as a foundation for a live prediction engine, which will be integrated into a full-scale project. 
+
 ## What The Project Does
 
 It executes an end-to-end 'scikit-learn' engineering pipeline that transforms unstructured text descriptions via hashing vectorizations while concurrently hot-encoding structural metrics. The current version focuses on fitting a linear regression model to the dataset and running validation checks to test prediction accuracy on a standard '0.0' to '10.0' scale. 
