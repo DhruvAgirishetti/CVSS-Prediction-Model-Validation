@@ -23,7 +23,7 @@ It executes an end-to-end 'scikit-learn' engineering pipeline that transforms un
 ## Performance Metrics & Output
 
 The Pipeline splits the parsed data into an 80/20 split for training & validation. It automatically prints out statistical evaluation metrics vs. the real baseline values to prove its accuracy:
-* **--- MODEL PERFORMANCE METRICS ---**
+* --- MODEL PERFORMANCE METRICS ---
 * **Mean Absolute Error (MAE): 0.3774**
 * **Mean Squared Error (MSE):  0.3378**
 * **R-squared (R²) Score:      0.8851**
