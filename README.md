@@ -25,7 +25,7 @@ It executes an end-to-end 'scikit-learn' engineering pipeline that transforms un
 The Pipeline splits the parsed data into an 80/20 split for training & validation. It automatically prints out statistical evaluation metrics vs. the real baseline values to prove its accuracy:
 * **The Dataset split:** Training size: 174222 | Validation size: 43556
 
-*---  MODEL VALIDATION METRICS  ---
+* ---  MODEL VALIDATION METRICS  ---
 * **Training Data R² Score:**   0.9288
 * **Validation Data R² Score:** 0.9207
 * **Variance Gap:**             0.0082
