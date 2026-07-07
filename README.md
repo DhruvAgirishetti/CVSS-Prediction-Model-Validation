@@ -1,4 +1,4 @@
-# CVSS Prediction Prototype & Model Validation
+# CVSS Prediction Model
 
 A prototype machine learning pipeline that parses National Vulnerability Database (NVD) JSON data to train and validate a model for predicting CVSS Base Scores. The model extracts a CVE's vector string, reading them individually, along with vulnerability descriptions, to measure how accurately linear regression models can predict severity ratings.
 
