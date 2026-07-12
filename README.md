@@ -6,7 +6,7 @@ A prototype machine learning pipeline that parses National Vulnerability Databas
 
 ## What The Project Does
 
-It executes an end-to-end 'scikit-learn' engineering pipeline that transforms unstructured text descriptions via hashing vectorizations while concurrently hot-encoding structural metrics. The current version focuses on fitting a linear regression model to the dataset and running validation checks to test prediction accuracy on a standard '0.0' to '10.0' scale. 
+It executes an end-to-end 'scikit-learn' engineering pipeline that transforms unstructured text descriptions via hashing vectorizations while concurrently hot-encoding structural metrics. The current version focuses on fitting an optimized LightGBM gradient-boosted tree regressor to the dataset and running validation checks to test prediction accuracy on a standard '0.0' to '10.0' scale. 
 
 ## Key Pipeline Features
 * **Cross-Version Normalization:** Bridges data gaps between legacy CVSS v2 and modern CVSS v3, v3.1 & v4 data structures during preprocessing.
@@ -17,7 +17,7 @@ It executes an end-to-end 'scikit-learn' engineering pipeline that transforms un
 ## Tech Stack
 * **Core Language:** Python
 * **Data Processing** Pandas, NumPy, JSON, Glob
-* **Machine Learning** Scikit-Learn (Pipelines, ColumnTransformers, HashingVectorizer, OneHotEncoder)
+* **Machine Learning** LightGBM, Scikit-Learn (Pipelines, ColumnTransformers, HashingVectorizer, OneHotEncoder)
 * **Visualization**: Seaborn, Matplotlib
 
 ## Performance Metrics & Output
@@ -26,14 +26,15 @@ The Pipeline splits the parsed data into an 80/20 split for training & validatio
 * **The Dataset split:** Training size: 174222 | Validation size: 43556
 
 * --- MODEL VALIDATION METRICS ---
-* **Training Data R² Score:**   0.9288
-* **Validation Data R² Score:** 0.9207
-* **Variance Gap:**             0.0082
+* **Training Data R² Score:   0.9827**
+* **Validation Data R² Score: 0.9806**
+* **Variance Gap:             0.0021**
 
 * --- MODEL PERFORMANCE METRICS ---
-* **Mean Absolute Error (MAE): 0.3279**
-* **Mean Squared Error (MSE):  0.2332**
-* **R-squared (R²) Score:      0.9207**
-* <img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/25b902a5-1045-4e62-9b63-8ad18baed964" />
+* **Mean Absolute Error (MAE): 0.1106**
+* **Mean Squared Error (MSE):  0.0607**
+* **R-squared (R²) Score:      0.9794**
+* <img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/dda5ff6f-5b1e-4bbc-a38d-d88def4bdb6e" />
+
 
 
