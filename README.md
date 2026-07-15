@@ -26,15 +26,16 @@ The Pipeline splits the parsed data into an 80/20 split for training & validatio
 * **The Dataset split:** Training size: 174222 | Validation size: 43556
 
 * --- MODEL VALIDATION METRICS ---
-* **Training Data R² Score:   0.9807**
-* **Validation Data R² Score: 0.9794**
-* **Variance Gap:             0.0014**
+* **Training Data R² Score:   0.9811**
+* **Validation Data R² Score: 0.9801**
+* **Variance Gap:             0.0011**
 
 * --- MODEL PERFORMANCE METRICS ---
-* **Mean Absolute Error (MAE): 0.1174**
-* **Mean Squared Error (MSE):  0.0647**
+* **Mean Absolute Error (MAE): 0.1114**
+* **Mean Squared Error (MSE):  0.0624**
 * **R-squared (R²) Score:      0.9780**
-<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/5daac3f2-4808-4308-b10c-d55595ef0968" />
+<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/af93e3ac-80aa-4664-8707-e03866f64411" />
+
 
 
 
