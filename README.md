@@ -34,7 +34,7 @@ The Pipeline splits the parsed data into an 80/20 split for training & validatio
 * **Mean Absolute Error (MAE): 0.1174**
 * **Mean Squared Error (MSE):  0.0647**
 * **R-squared (R²) Score:      0.9780**
-*<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/5daac3f2-4808-4308-b10c-d55595ef0968" />
+<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/5daac3f2-4808-4308-b10c-d55595ef0968" />
 
 
 
