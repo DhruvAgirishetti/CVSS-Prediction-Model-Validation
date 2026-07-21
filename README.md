@@ -31,10 +31,11 @@ The Pipeline splits the parsed data into an 80/20 split for training & validatio
 * **Variance Gap:             0.0022**
 
 * --- MODEL PERFORMANCE METRICS ---
-* **Mean Absolute Error (MAE): 0.1132**
+* **Mean Absolute Error (MAE): 0.2648**
 * **Mean Squared Error (MSE):  0.0657**
-* **R-squared (R²) Score:      0.9777**
-<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/bee6a192-433b-4c48-aa8f-694526f2a055" />
+* **R-squared (R²) Score:      0.9473**
+<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/558609e0-a0e5-4c9f-ad18-43548fc2b4a8" />
+
 
 
 
