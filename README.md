@@ -11,30 +11,31 @@ It executes an end-to-end 'scikit-learn' engineering pipeline that transforms un
 ## Key Pipeline Features
 * **Cross-Version Normalization:** Bridges data gaps between legacy CVSS v2 and modern CVSS v3, v3.1 & v4 data structures during preprocessing.
 * **Hybrid NLP & Tabular Pipeline:** Combines textual context (vulnerability descriptions) with discrete metric features (attack vectors, privileges required, etc).
-* **High-Throughput Vectorization:** Implements memory-efficient 'Hashing Vectorizer' to process 217k+ historical records smoothly
+* **High-Throughput Vectorization:** Implements a "TF-IDF Vectorizer" to look at important words in the descriptions, making the model more accurate compared to using a "Hashing Vectorizer," which suffered from hash collisions and risked breaking the model by introducing empty feature space when the allocated size exceeded what was actually used in reality. 
 * **Bounded Scoring Logic:** Enforces mathematical scoring constraints via numpy clipping and ceil rounding to perfectly mirror standard NVD scoring.
 
 ## Tech Stack
 * **Core Language:** Python
 * **Data Processing** Pandas, NumPy, JSON, Glob
-* **Machine Learning** LightGBM, Scikit-Learn (Pipelines, ColumnTransformers, HashingVectorizer, OneHotEncoder)
+* **Machine Learning** LightGBM, Scikit-Learn (Pipelines, ColumnTransformers, TfidfVectorizer, OneHotEncoder)
 * **Visualization**: Seaborn, Matplotlib
 
 ## Performance Metrics & Output
 
 The Pipeline splits the parsed data into an 80/20 split for training & validation. It automatically prints out statistical evaluation metrics vs. the real baseline values to prove its accuracy:
-* **The Dataset split:** Training size: 174222 | Validation size: 43556
+* **The Dataset split:** Training size: 194683 | Validation size: 48660
 
 * --- MODEL VALIDATION METRICS ---
-* **Training Data R² Score:   0.9813**
-* **Validation Data R² Score: 0.9791**
-* **Variance Gap:             0.0022**
+* **Training Data R² Score:   0.9850**
+* **Validation Data R² Score: 0.9815**
+* **Variance Gap:             0.0035**
 
 * --- MODEL PERFORMANCE METRICS ---
-* **Mean Absolute Error (MAE): 0.2648**
-* **Mean Squared Error (MSE):  0.0657**
-* **R-squared (R²) Score:      0.9473**
-<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/558609e0-a0e5-4c9f-ad18-43548fc2b4a8" />
+* **Mean Absolute Error (MAE): 0.1136**
+* **Mean Squared Error (MSE):  0.0643**
+* **R-squared (R²) Score:      0.9797**
+<img width="989" height="590" alt="Plot Final_Publish" src="https://github.com/user-attachments/assets/41e24166-9f48-4c80-a163-00cfb0ebac53" />
+
 
 
 
